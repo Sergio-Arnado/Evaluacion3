@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        textarea {
+            resize: none;
+        }
+    </style>
+    <link rel="stylesheet" href="/static/estilos.css">
+</head>
+<body>
+
+    <form method="POST"class="form__ejercicio2">
+        <label>Nombre 1:</label><br>
+        <textarea name="nombre1" rows="2" cols="30" required></textarea><br>
+        <label>Nombre 2:</label><br>
+        <textarea name="nombre2" rows="2" cols="30" required></textarea><br>
+        <label>Nombre 3:</label><br>
+        <textarea name="nombre3" rows="2" cols="30" required></textarea><br>
+        <input type="submit" class="form__Enviar" value="Enviar">
+
+        <p>El nombre con mayor cantidad de caracteres es: {{ nombre }}</p>
+        <p>El nombre tiene: {{ longitud }}</p>
+    </form>
+</body>
+</html>
